@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Membership Prices</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg);
+  background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      color:rgb(81, 0, 128);
+      text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.gym-card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.details {
+  display: none;
+  margin-top: 10px;
+}
+
+.details p {
+  margin-bottom: 5px;
+}
+
+  </style>
+</head>
+
+<body>
+    <script>
+        function toggleDetails(gymId) {
+  const details = document.getElementById(gymId);
+  if (details.style.display === "block") {
+    details.style.display = "none";
+  } else {
+    details.style.display = "block";
+  }
+}
+
+    </script>
+  <div class="container">
+    <h1>Gym Membership Prices</h1><br>
+    <div class="gym-card" id="gym1">
+      <h2>Gym 1: Fitness Hub</h2>
+      <p class="price">Basic: $20/month</p>
+      <p class="price">Standard: $35/month</p>
+      <p class="price">Premium: $50/month</p>
+      <button onclick="toggleDetails('gym1-details')">More Info</button>
+      <div id="gym1-details" class="details">
+        <p>Facilities: Cardio, Weightlifting, Yoga, Pool</p>
+        <p>Location: 123 Gym Street, Fitness City</p>
+      </div>
+    </div>
+
+    <div class="gym-card" id="gym2">
+      <h2>Gym 2: Powerhouse Gym</h2>
+      <p class="price">Basic: $25/month</p>
+      <p class="price">Standard: $40/month</p>
+      <p class="price">Premium: $55/month</p>
+      <button onclick="toggleDetails('gym2-details')">More Info</button>
+      <div id="gym2-details" class="details">
+        <p>Facilities: Strength Training, CrossFit, Zumba, Sauna</p>
+        <p>Location: 456 Power Road, Muscle Town</p>
+      </div>
+    </div>
+
+    <div class="gym-card" id="gym3">
+      <h2>Gym 3: Elite Fitness</h2>
+      <p class="price">Basic: $30/month</p>
+      <p class="price">Standard: $45/month</p>
+      <p class="price">Premium: $60/month</p>
+      <button onclick="toggleDetails('gym3-details')">More Info</button>
+      <div id="gym3-details" class="details">
+        <p>Facilities: Pilates, Swimming, Kickboxing, Spa</p>
+        <p>Location: 789 Elite Avenue, Fitland</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

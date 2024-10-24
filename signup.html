@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg);
+            background-size: cover;
+     background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      color: white;
+      text-align: center;
+        }
+        form{
+            padding-left: 30%;
+            padding-top: 10%;
+        }
+        input{
+            border: solid black;
+            border-radius: 2px;
+        }
+        input:focus{
+            background-color: burlywood;
+        }
+        input[type="submit"]:hover{
+            background-color: aqua;
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function data()
+        {
+            var a=document.getElementById("i1").value;
+            var a=document.getElementById("i2").value;
+            var a=document.getElementById("i3").value;
+            var a=document.getElementById("i4").value;
+            
+        if( a==""|| b==""|| c==""|| d=="")
+         {
+            alert("All fields are mandatory");
+            return false;
+         }
+         else{
+            true;
+         }
+        }
+
+    </script>
+    <form onsubmit="data()" action="CA3.html">
+        User id: <br>
+        <input id="i1" type="text" placeholder="Your id"> <br><br>
+
+        Mobile no: <br>
+        <input id="i2" type="number" placeholder="Your no."><br><br>
+        password: <br>
+        <input id="i3" type="password" placeholder="password"><br><br>
+        Confirm password: <br>
+        <input id="i4" type="password" placeholder="Confirm password"> <br><br>
+        <input id="i5" type="submit">
+        <input id="i6" type="reset"><br>
+    </form>
+
+</body>
+
+</html>
